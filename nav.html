@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-control" content="no-store">
+    <title>Document</title>
+    <link rel="stylesheet" href="swiper-bundle.css">
+    <link
+      rel="stylesheet"
+      href="bootstrap.min.css"
+    />
+    <style>
+      body {
+        background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif, 微軟正黑體;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .right {
+        text-align: right;
+        position: absolute;
+        bottom: 14px;
+        right: 2px;
+        color: gray;
+        z-index: 999;
+      }
+
+      .right a {
+        color: gray;
+        z-index: 999;
+
+      }
+
+      .swiper-slide img {
+        max-height: 100vh;
+      }
+
+      @media only screen and (max-width: 360px) {
+        .swiper-slide button {
+          padding: 0rem 3rem !important;
+        }
+      }
+
+      .swiper-container-horizontal>.swiper-pagination-bullets{
+        bottom: 0px;
+      }
+      /* 
+      @media only screen and (min-width: 768px) {
+        .right {
+          bottom: 8px;
+          right: 200px;
+          color: gray;
+          z-index: 999;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div style="position: relative">
+                <img src="img/01.jpg" alt="" />
+                <div class="right"><a href="selfClose.html">略過</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="position: relative">
+                <img src="img/02.jpg" alt="" />
+                <div class="right"><a href="selfClose.html">略過</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="position: relative">
+                <img src="img/03.jpg" alt="" />
+                <div class="right"><a href="selfClose.html">略過</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="position: relative">
+                <img src="img/04.jpg" alt="" />
+                <div class="right"><a href="selfClose.html">略過</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="position: relative">
+                <img src="img/05.jpg" alt="" />
+                <div class="right"><a href="selfClose.html">略過</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="position: relative">
+                <img src="img/06.jpg" alt="" />
+              </div>
+              <div style="top: 2.5%; position: absolute;">
+                <button
+                  type="button"
+                  class="btn btn-danger btn-lg"
+                  style="padding: 0.5rem 3rem;"
+                  onclick="javascript:location.href='selfClose.html'"
+                >
+                  開始體驗
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="swiper-bundle.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-pagination"
+        }
+      });
+    </script>
+  </body>
+</html>
